@@ -1,0 +1,1502 @@
+@keyframes zoomIn{
+    from{
+        transform: scale(20%);
+    }
+
+    to{
+        transform: scale(100%);
+    }
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+*{
+    /* padding: 0;
+    margin: 0; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 95%;
+    margin: auto;
+    font-family: Arial;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8),rgba(255, 255, 255, .8), rgba(255, 99, 99, .8)), url(../images/10.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow-x: hidden;
+}
+html, body{
+    margin: 0;
+     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, tomato, black);
+    border-radius: 10px;
+}
+/* preloader styling */
+#preloader{
+    background: #ffffff url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+/* nav styling start here  */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 55px;
+    font-family: lora;
+}
+.logo h2 a{
+   text-decoration: none;
+   color: #000000;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    font-size: .8em;
+    line-height: 2;
+    font-family:europa;
+    font-size: 16px;
+    
+}
+.nav-links ul li{
+   list-style-type: none;
+}
+.nav-links ul li a{
+   text-decoration: none;
+   margin-right: 10px;
+   color: black;
+
+}
+.about-us{
+    display: none;
+    animation: zoomIn .5s;
+}
+.nav-links ul li a:hover{
+   color: rgb(240,134,105);
+   transition-duration: .5s;
+}
+.soc-link{
+    width: 35%;
+}
+.soc-link > i{
+    margin-right: 10px;
+}
+.soc-link > i:hover{
+    box-sizing: border-box;
+    font-size: 1.5em;
+    transition-duration: .5s;
+}
+.soc-link > a{
+    text-decoration: none;
+    font-size: .8em;
+    padding: 15px 20px;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+}
+.soc-link > a:hover{
+    background-color: rgb(167, 91, 77);
+    transition-duration: .5s;
+}
+.mobile-navLinks{
+    display: none;
+}
+.nav-btn{
+    display: none;
+}
+.close-nav-btn{
+    display: none;
+}
+/* nav styling end here  */
+
+/* hero styling start here  */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.hero-img > img{
+    width: 100%;
+    border-top-right-radius: 20%;
+}
+.hero-desc{
+    width: 50%;
+    text-align: center;
+    line-height: 2;
+}
+.hero-desc > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240,134,105);
+    font-size: 2.5em;
+    line-height: 1;
+}
+.hero-desc > h2{
+    font-size: 3em;
+    line-height: 1.5;
+}
+.hero-desc > h2 > span{
+    color: rgb(240,134,105);
+}
+.hero-dec-btn > a{
+    display: block;
+    text-decoration: none;
+    font-size: .8em;
+    padding: 15px 20px;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.hero-dec-btn > a:hover{
+    background-color: rgb(167, 91, 77);
+    transition-duration: .5s;
+}
+/* hero styling end here  */
+
+/* main styling start here  */
+
+/* section one styling here  */
+.sec-one{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    /* animation: zoomIn 1s; */
+    /* scroll-timeline: inline;
+    scroll-timeline-axis: block 50% 50%; */
+}
+
+.sec-one-header{
+    margin-bottom: 50px;
+}
+.sec-one-header p{
+    font-weight: bold;
+    color: rgb(240,134,105);
+}
+.sec-one-header h2{
+    font-size: 2.5em;
+}
+.sec-one-header h2 span{
+    color: rgb(240,134,105);
+}
+.sec-one .sec-one-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-one .sec-one-body i{
+ color: rgb(240,134,105);
+ font-size: 10em;
+ margin-bottom: 15px;
+}
+.sec-one .sec-one-body p{
+ font-weight: bold;
+ margin-bottom: 15px;
+}
+.Create-an-AccountBtn{
+    margin-top: 20px;
+}
+.Create-an-AccountBtn > a{
+    text-decoration: none;
+    font-size: .8em;
+    padding: 15px 50px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    color: rgb(240,134,105);
+}
+.Create-an-AccountBtn > a:hover{
+    color: white;
+    background-color: tomato;
+    transition-duration: .5s;
+}
+/* section one styling here  */
+
+/* section two start here  */
+.sec-two div img{
+    width: 100%;
+    height: 350px;
+    background-color: tomato;
+    margin-top: 150px;
+}
+/* section two end here  */
+
+/* section three start here  */
+.sec-three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.sec-three-desc{
+    width: 50%;
+}
+.secThreeImg > img{
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 20%;
+    /* height: 50px; */
+
+}
+.sec-three-desc h4{
+    color: rgb(240,134,105) ;
+    text-align: center;
+    line-height: 2;
+}
+.sec-three-desc h2{
+    text-align: center;
+    font-size: 2em;
+    line-height: 2;
+}
+.sec-three-desc p{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.sec-three-det{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.sec-three-det > div h3{
+    text-align: center;
+}
+.sec-three-det > div{
+    text-align: center;
+    margin: 20px;
+}
+
+.exploreBtn{
+    text-align: center;
+}
+.exploreBtn > a{
+    text-decoration: none;
+    font-size: .8em;
+    padding: 15px 50px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    color: rgb(240,134,105);
+}
+.exploreBtn > a:hover{
+    color: white;
+    background-color: tomato;
+    transition-duration: .5s;
+}
+/* section three end here  */
+
+/* section four start here  */
+.sec-four{
+    width: 90%;
+    margin: auto;
+    background-color: tomato;
+}
+.sec-four-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    color: white;
+    line-height: 2;
+    text-align: center;
+}
+.sec-four-container div h3{
+    font-size: 2em;
+}
+.subscriptionBtn > a{
+    font-family: lucida sans;
+    text-decoration: none;
+    color: tomato;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+/* section four end here  */
+
+/* section 5 start here */
+.sec-4{
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+}
+.sec-4 > .sec-4Header{
+    margin-bottom: 30px;
+    margin-top: 200px;
+    background-color: tomato;
+    padding: 50px 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    border-radius: 45%;
+}
+.sec-4 > div:first-child > h2{
+    font-size: 2em;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+.sec-4 > div:first-child > p{
+    color: black;
+}
+.sec-4Body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-4Body > div{
+    width: 30%;
+    padding: 20px;
+    margin-right: 10px;
+}
+.sec-4Body > div:hover{
+    background-color:rgba(255, 99, 71, .3);
+    border-radius: 10px;
+    transition: .5s;
+}
+.sec-4Body > div{
+    width: 25%;
+    text-align: center;
+}
+.sec-4Body > div > div > img{
+    margin: 20px 0;
+    width: 35px;
+
+}
+.sec-4Body > div > div > p{
+    color: #000000;
+}
+.sec-4Body > div > div:last-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sec-4Body > div > div:last-child > img{
+    width: 50px;
+    margin-right: 15px;
+}
+.sec-4Body > div > div:last-child > p > span:first-child{
+    color: tomato;
+    font-weight: bolder;
+    font-size:1.2em ;
+}
+
+/* section 5 end here */
+
+/* section six start here */
+.sec-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.sec-6 div img{
+    width: 100%;
+    border-top-left-radius: 30%;
+}
+.sec-6 div:nth-child(2){
+    width: 40%;
+    line-height: 2;
+    text-align: center;
+}
+.sec-6 div:nth-child(2) h3{
+   color: tomato;
+   font-weight: bolder;
+   font-size: 1.5em;
+}
+.sec-6 div:nth-child(2) h2{
+   font-size: 3em;
+}
+.sec-6 div:nth-child(2) h4{
+   font-size: 1.2em;
+}
+.sec-6 div:nth-child(2) p{
+   font-style: italic;
+   line-height: 1.5;
+}
+.sec-6 div:nth-child(2) div{
+   margin-top: 50px;
+}
+.sec-6 div:nth-child(2) div a{
+   text-decoration: none;
+   font-size: .8em;
+   padding: 15px 50px;
+   border: 2px solid tomato;
+   border-radius: 5px;
+   color: rgb(240,134,105);
+}
+.sec-6 div:nth-child(2) div a:hover{
+   color: white;
+   background-color: tomato;
+   transition-duration: .5s;
+}
+/* section six end here */
+
+/* section seven start here */
+.sec-7{
+    width: 100%;
+    background-color: tomato;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    padding: 100px;
+    line-height: 2;
+    color: white;
+    box-sizing: border-box;
+}
+.sec-7 h2{
+   margin-bottom: 50px;
+   font-size: 2em;
+}
+.sec-7 div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 60%;
+   margin: auto;
+}
+.sec-7 div div{
+   flex-direction: column;
+}
+.sec-7 div div i{
+   font-size: 7em;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.sec-7 div div div a{
+    text-decoration: none;
+   text-align: center;
+   font-size: .8em;
+   padding: 15px 50px;
+   background-color: #fff;
+   border-radius: 10px;
+   color: rgb(240,134,105);
+   line-height: 1.2;
+   box-sizing: border-box;
+}
+.sec-7 div div div a:hover{
+   background-color:tomato;
+   color: rgb(255, 255, 255);
+   border: 2px white solid;
+   transition-duration: .5s;
+}
+
+/* section seven end here */
+
+/* section Eight start here */
+.sec-8{
+    margin: 150px auto;
+    text-align: center;
+}
+.sec-8 > h3{
+    color: tomato;
+    font-weight: bolder;
+    margin-bottom: .3em;
+}
+.sec-8 > h2{
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+.sec-8 > p{
+    width: 25%;
+    margin: auto;
+    margin-bottom: .3em;
+}
+.sec-8 > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.sec-8 > div > div > iframe{
+    width: 70%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+/* section Eight end here */
+.show-links{
+    display: initial;
+    transition-duration: 1s;
+}
+.show-link{
+    display: initial;
+    transition-duration: 1s;
+}
+/* main styling end here  */
+
+/* footer start here */
+footer{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 80px 50px;
+    background-color: tomato;
+}
+footer > div{
+   display: flex;
+   justify-content: space-between;
+   align-items: top;
+   padding-top: 20px;
+   font-family: europa;
+}
+footer > div > div{
+   width: 30%;
+   color: #fff;
+}
+footer > div > div:first-child > div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   letter-spacing: .3em;
+   margin-bottom: 30px;
+}
+footer > div > div:first-child > div > i{
+    font-size: 2.5em;
+}
+footer > div > div:first-child > .footer-para{
+   margin-bottom: 30px;
+}
+footer > div > div:nth-child(2) > h2{
+    margin-bottom: 30px;
+ }
+footer > div > div:nth-child(2) > ul > li{
+   list-style-type: none;
+   padding-bottom: 10px;
+ }
+footer > div > div:nth-child(2) > ul > li > a{
+   text-decoration: none;
+   border-bottom: 2px solid white;
+   color: white;
+ }
+footer > div > div:nth-child(2) > ul > li > a:hover{
+   letter-spacing: .1em;
+   transition: .5s;
+ }
+ footer > div > div:nth-child(3) > h2{
+    margin-bottom: 30px;
+ }
+footer > div > div:nth-child(3) > ul > li{
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+footer > div > div:nth-child(3) > ul > li > a{
+   text-decoration: none;
+   color: white;
+ }
+/* footer end here */
+
+/* login page styling start here  */
+.showForm{
+    display: initial;
+}
+.hideForm{
+    display: none;
+}
+.login-container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-container div a i{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: black;
+}
+.login-container div a i:hover{
+    font-size: 2.2em;
+}
+.login-container div h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+ .logo-img img{
+    width: 70px;
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.login{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7),rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    width: 95%;
+    height: 800px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    margin:  50px auto;
+    box-shadow: inset 1px 1px 15px;
+    animation: zoomIn 1s;
+    padding: 20px;
+}
+.login-form{
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+    display: none;
+    animation: zoomIn 1s;
+}
+.login-body{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin:  60px auto;
+    background-color: #fff;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.3em;
+    width: 30%;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    flex: 1;
+}
+.bookingForm{
+    width: 50%;
+}
+#contactDetails label{
+    width: 100%;
+    padding: 10px;
+    line-height: 5;
+    border-bottom: 2px groove black;
+}
+#contactDetails label input{
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    
+}
+#contactDetails label input:hover{
+    border: 2px solid white;
+}
+.contactDetailsBtn{
+    margin:  20px auto;
+}
+.contactDetailsBtn h4{
+   line-height: 1;
+   font-family: 'Times New Roman', Times, serif;
+}
+.login-body .logo-img img{
+    width: 150px;
+    margin-top: 20px;
+}
+.loginBtn{
+    padding: 5px 25px;
+    background-color: white;
+    border: none;
+    font-size: .9em;
+    width: 50%;
+}
+.loginBtn:focus{
+    background-color: tomato;
+    color: white;
+    transition: .5s;
+}
+.signInBtn{
+    padding: 5px 25px;
+    background-color: white;
+    border: none;
+    font-size: .8em;
+    width: 100%;
+    text-align: center;
+}
+.signInBtn:focus{
+    background-color: tomato;
+    color: white;
+    transition: .5s;
+}
+#loginSignUpForm button{
+    box-sizing: border-box;
+    width: 70%;
+    padding: .3em;
+    font-size: 1em;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 15%;
+    color: white;
+    background-color: gray;
+}
+.One-Time-Pickup > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(255, 99, 71, .7);
+    box-shadow: 2px 2px 10px tomato;
+    padding: 4px 8px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.One-Time-Pickup > a:hover{
+    font-size: small;
+    box-shadow: 2px 2px 10px rgb(255, 0, 0);
+    transition-duration: .5s;
+}
+.login-body .existingUser > a{
+   font-size: 1em;
+}
+#bookingFormBtn{
+    font-size: 1em;
+    color: white;
+    background-color: tomato;
+    padding: 2px 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#bookingFormBtn:hover{
+    color: black;
+    background-color: rgb(221, 48, 17);
+    cursor: pointer;
+    transition: .5s;
+}
+#contactDetails fieldset{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#contactDetails fieldset legend{
+    background-color: rgb(249, 193, 183);
+    padding: 5px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px;
+    box-sizing: border-box;
+}
+.prevPage > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(255, 99, 71, .7);
+    box-shadow: 2px 2px 10px tomato;
+    padding: 4px 8px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.prevPage > a:hover{
+    font-size: small;
+    box-shadow: 2px 2px 10px rgb(255, 0, 0);
+    transition-duration: .5s;
+}
+/* login page styling end here  */
+
+/* media query start here  */
+@media screen and (max-width: 450px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* preloader styling */
+    #preloader{
+    background: #ffffff url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+    body{
+        width: 100%;
+        margin: auto;
+        padding-top: 0px;
+    }
+    /* nav styling start here  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    margin: 0;
+
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0px;
+    padding-left: 20px;
+    font-family: lora;
+    font-size: .7em;
+    position: relative;
+
+   
+}
+
+.nav-links ul{
+    display: none;
+    
+}
+.soc-link{
+   display: none;
+}
+.nav-btn {
+    display: initial;
+    position: absolute;
+    top: 45px;
+}
+.nav-btn > i{
+    font-size: 1em;
+    position: relative;
+    top: -5px;
+}
+.nav-btn > i:hover{
+  color: tomato;
+}
+.close-nav-btn{
+    /* display: initial; */
+    font-size: 1.5em;
+    position: absolute;
+    top: 35px;
+    color: tomato;
+}
+.mobile-navLinks{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8),rgba(255, 255, 255, .8), rgba(255, 99, 99, .8)), url(../images/17.jpeg);
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    top: 70px;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    animation: slideIn 1s;
+    /* overflow-y: scroll; */
+    z-index: 100;
+}
+.mobile-navLinks > ul > li{
+    width: 90%;
+    margin: auto;
+    list-style-type: none;
+    font-size: 1.3em;
+    text-align: start;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: visible;
+   font-style: oblique;
+   z-index: 10;
+
+}
+.mobile-navLinks > ul > li > a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+.mobile-navLinks > ul > li > a:hover{
+    border-bottom: 2px groove rgb(0, 0, 0);
+    margin-bottom: 10px;
+    transition-duration: 1s;
+}
+.mobile-navLinks > ul > li > a > i{
+   font-size: .8em;
+   font-weight: normal;
+}
+
+/* nav styling end here  */
+
+/* hero styling start here  */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+.hero-img > img{
+    width: 100%;
+    border-top-right-radius: 20%;
+    position: relative;
+    top: -210px;
+}
+.hero-desc{
+    width: 100%;
+}
+.hero-desc > div:first-child{
+    font-size: 1.7em;
+}
+.hero-desc > h2{
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.hero-desc > p{
+    font-size: .9em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.hero-desc > p:nth-child(4){
+    position: relative;
+    bottom: -235px;
+}
+.hero-dec-btn > a{
+    padding: 10px 20px;
+    width: 40%;
+    position: relative;
+    bottom: -220px;
+}
+.hero-dec-btn > a:hover{
+    background-color: rgb(167, 91, 77);
+    transition-duration: .5s;
+}
+/* hero styling end here  */
+
+/* mobile view sec-one styling start here  */
+.sec-one .sec-one-body p{
+    font-size: .7em;
+   }
+.sec-one .sec-one-body {
+    display: block;
+    margin-bottom: 50px;
+}
+.Create-an-AccountBtn > a{
+    text-decoration: none;
+    font-size: .5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    color: rgb(240,134,105);
+}
+/* mobile view sec-one styling end here  */
+
+/* mobile view sec-three styling start here  */
+.sec-three{
+    display: block;
+    width: 90%;
+}
+.sec-three-desc{
+    width: 100%;
+}
+.secThreeImg > img{
+    width: 90vw;
+    height: 70vh;
+    margin-top: 70px;
+    border-top-right-radius: 20%;
+
+}
+.sec-three-desc h4{
+    line-height: 1.5;
+}
+.sec-three-desc h2{
+    line-height: 1.5;
+}
+.sec-three-det > div{
+    text-align: center;
+    margin: 20px;
+}
+.exploreBtn > a{
+    padding: 10px 30px;
+}
+/* mobile view sec-three styling end here  */
+
+/* mobile view sec-four styling start here  */
+.sec-four{
+    width: 95%;
+}
+.sec-four-container{
+    display: block;
+    padding: 30px 0px;
+    width: 100%;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+}
+.sec-four-container div h3{
+    font-size: 1.5em;
+}
+.sec-four-container div h4{
+    font-size: .8em;
+}
+.subscriptionBtn > a{
+    padding: 10px 20px;
+}
+/* mobile view sec-four styling end here  */
+
+/* mobile view sec-five styling end here  */
+/* section 5 start here */
+.sec-4{
+    width: 85%;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+}
+.sec-4 > .sec-4Header{
+    margin-bottom: 30px;
+    margin-top: 200px;
+    background-color: tomato;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    border-radius: 45%;
+}
+.sec-4 > div:first-child > h2{
+    font-size: 1.2em;
+}
+.sec-4 > div:first-child > p{
+    font-size: .8em;
+}
+.sec-4Body{
+    display: initial;
+    width: 100%;
+}
+.sec-4Body > div{
+    width: 50%;
+    padding: 10px;
+    margin-right: 0px;
+}
+.sec-4Body > div:hover{
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    transition: .5s;
+}
+.sec-4Body > div{
+    width: 100%;
+    background-color:rgba(255, 99, 71, .3);
+    text-align: center;
+    border: 2px groove tomato;
+    margin-top: 10px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+}
+.sec-4Body > div > div > img{
+    border-radius: 50%;
+
+}
+.sec-4Body > div > div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec-4Body > div > div:last-child > img{
+    width: 50px;
+    margin-right: 0px;
+}
+/* mobile view sec-five styling end here  */
+
+/* mobile view styling for section six starthere */
+.sec-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.sec-6 div:nth-child(2){
+    width: 100%;
+    line-height: 1.2;
+}
+.sec-6 div:nth-child(2) h3{
+   color: tomato;
+   font-weight: bolder;
+   font-size: 1.5em;
+}
+.sec-6 div:nth-child(2) h2{
+   font-size: 2.5em;
+}
+.sec-6 div:nth-child(2) div a{
+   padding: 10px 30px;
+   border: 2px solid tomato;
+   background-color:rgba(255, 255, 255, 0.3)
+}
+/* mobile view styling for section six end here */
+
+/* mobile view styling for section seven start here */
+.sec-7{
+    width: 100%;
+    background-color: tomato;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    padding: 100px;
+    line-height: 2;
+    color: white;
+    box-sizing: border-box;
+}
+.sec-7 h2{
+    width: 100%;
+   margin-bottom: 30px;
+   font-size: 1.8em;
+}
+.sec-7 div{
+   display: block;
+   width: 100%;
+}
+
+.sec-7 div div i{
+   font-size: 5em;
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.sec-7 div div div a{
+    text-decoration: none;
+   text-align: center;
+   font-size: .8em;
+   margin-bottom: 50px;
+   padding: 10px 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   color: rgb(240,134,105);
+   line-height: 1.2;
+   box-sizing: border-box;
+}
+.sec-7 div div div a:last-child{
+   font-size: .5em;
+   font-weight: .5em;
+   margin-bottom: 50px;
+   padding: 10px 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   color: rgb(240,134,105);
+   line-height: 1.2;
+   box-sizing: border-box;
+}
+.sec-7 div div div a{
+    text-decoration: none;
+   text-align: center;
+   font-size: .8em;
+   margin-bottom: 50px;
+   padding: 10px 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   color: rgb(240,134,105);
+   line-height: 1.2;
+   box-sizing: border-box;
+}
+
+/* mobile view styling for section seven end here */
+
+
+/* mobile view styling for section Eight start here */
+.sec-8{
+    margin: 100px auto;
+    text-align: center;
+}
+
+.sec-8 > h2{
+    font-size: 1.8em;
+}
+.sec-8 > p{
+    width: 100%;
+    font-size: .8em;
+}
+.sec-8 > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.sec-8 > div > div > iframe{
+    width: 90%;
+    height: 70%;
+    margin-bottom: 5px;
+}
+.sec-8 > div > div > h3{
+    font-size: .8em;
+}
+/* mobile view styling for section Eight end here */
+
+/* mobile view styling for footer start here */
+footer{
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+    width: 95%;
+}
+footer > div{
+   display: block;
+   width: 90%;
+}
+footer > div > div{
+   width: 90%;
+}
+footer > div > div:first-child > div{
+   display: flex;
+}
+footer > div > div:first-child > div > i{
+    font-size: 2em;
+}
+footer > div > div:first-child > .footer-para{
+   margin-bottom: 30px;
+}
+footer > div > div:nth-child(2) > h2{ 
+    margin-bottom: 10px;
+ }
+
+footer > div > div:nth-child(2) > ul > li > a{
+   text-decoration: none;
+   border-bottom: 2px solid white;
+   color: white;
+ }
+footer > div > div:nth-child(2) > ul > li > a:hover{
+   letter-spacing: .1em;
+   transition: .5s;
+ }
+ footer > div > div:nth-child(3) > h2{
+    margin-bottom: 30px;
+ }
+footer > div > div:nth-child(3) > ul > li{
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+footer > div > div:nth-child(3) > ul > li > a{
+   text-decoration: none;
+   color: white;
+ }
+/* mobile view styling for footer end here */
+
+
+/* login page mobile view styling start here  */
+
+.login-container div a i{
+    font-size: 2em;
+    font-weight: bolder;
+    color: black;
+}
+.login-container div a i:hover{
+    font-size: 2.2em;
+}
+.login-container div h3{
+    font-size: .8em;
+    font-weight: bolder;
+}
+ .logo-img img{
+    width: 20px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin:  50px auto;
+    box-shadow: inset 1px 1px 15px;
+    animation: zoomIn 1s;
+    padding: 20px;
+}
+.login-form{
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+    display: none;
+    animation: zoomIn 1s;
+}
+.login-body{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin:  60px auto;
+    background-color: #fff;
+    text-align: center;
+    line-height: 1;
+    font-size: 1.3em;
+    width: 80%;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    flex: 1;
+}
+.bookingForm{
+    width: 90%;
+}
+#contactDetails label{
+    width: 100%;
+    line-height: 3;
+}
+#contactDetails label input{
+    width: 80%;
+}
+
+.contactDetailsBtn{
+    margin:  20px auto;
+}
+.contactDetailsBtn h4{
+   line-height: 1;
+   font-family: 'Times New Roman', Times, serif;
+}
+.login-body .logo-img img{
+    width: 100px;
+    margin-top: 20px;
+}
+.loginBtn{
+    padding: 5px 25px;
+    background-color: white;
+    border: none;
+    font-size: .9em;
+    width: 50%;
+}
+.loginBtn:focus{
+    background-color: tomato;
+    color: white;
+    transition: .5s;
+}
+.signInBtn{
+    padding: 5px 25px;
+    background-color: white;
+    border: none;
+    font-size: .8em;
+    width: 100%;
+    text-align: center;
+}
+.signInBtn:focus{
+    background-color: tomato;
+    color: white;
+    transition: .5s;
+}
+#loginSignUpForm button{
+    box-sizing: border-box;
+    width: 70%;
+    padding: .3em;
+    font-size: 1em;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 15%;
+    color: white;
+    background-color: gray;
+}
+.One-Time-Pickup > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(255, 99, 71, .7);
+    box-shadow: 2px 2px 10px tomato;
+    padding: 4px 8px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.One-Time-Pickup > a:hover{
+    font-size: small;
+    box-shadow: 2px 2px 10px rgb(255, 0, 0);
+    transition-duration: .5s;
+}
+.login-body .existingUser > a{
+   font-size: 1em;
+}
+#bookingFormBtn{
+    font-size: 1em;
+    color: white;
+    background-color: tomato;
+    padding: 2px 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#bookingFormBtn:hover{
+    color: black;
+    background-color: rgb(221, 48, 17);
+    cursor: pointer;
+    transition: .5s;
+}
+#contactDetails fieldset{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#contactDetails fieldset legend{
+    background-color: rgb(249, 193, 183);
+    padding: 5px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px;
+    box-sizing: border-box;
+}
+.prevPage > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(255, 99, 71, .7);
+    box-shadow: 2px 2px 10px tomato;
+    padding: 4px 8px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.prevPage > a:hover{
+    font-size: small;
+    box-shadow: 2px 2px 10px rgb(255, 0, 0);
+    transition-duration: .5s;
+}
+/* login page mobile view styling end here  */
+}
+
+/* media query end here  */
+
+

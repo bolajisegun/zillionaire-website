@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Pickup</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <!-- <script type="text/javascript">
+   (function(){
+      emailjs.init("EsJYW0hX4x12KCnyA");
+   })();
+</script> -->
+</head>
+<body>
+    <div id="preloader">
+        
+    </div>
+
+    <div class="container">
+        <!-- The header start here  -->
+
+        <header>
+
+            <!-- The nav start here  -->
+            <nav>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <i class="fa-solid fa-bars-staggered"></i><h2><a href="index.html">ZILLIONAIRE<sup>&reg;</sup></a></h2>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li class="our-story story"><a href="#">Our Story</a>
+                                <ul class="aboutUs">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Plans</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Residential Laundry</a></li>
+                            <li><a href="#">Commercial Laundry</a></li>
+                            <li><a href="#">Services Areas</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="soc-link">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <a href="#">Schedule a Pickup</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-btn">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </div>
+                    <div class="close-nav-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+               
+            </nav>
+            <aside class="mobile-navLinks">
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Residential Laundry <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a href="#">Commercial Laundry <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a href="#">Services Areas <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a href="#">Shop <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <div class="soc-link">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <a href="#">Schedule a Pickup</a>
+                </div>
+            </aside>
+            <!-- The nav end here  -->
+
+            <!-- header ends here -->
+
+            <!-- main start here  -->
+            <section class="login-header">
+                <div class="login-container">
+                    <div>
+                        <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
+                        <h3>Get Started</h3>
+                        <div class="logo-img">
+                            <img src="../images/logo1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="login">
+                <div class="login-body">
+                    <div class="logo-img">
+                        <img src="../images/logo1.png" alt="">
+                    </div>
+                    <h4>
+                        Welcome to Zillionaire
+                    </h4>
+
+                    <h4>One Time Pickup Plan</h4>
+
+                   <div class="One-Time-Pickup Pickup-Plan">
+                    <a href="#">Book a One Time Pickup</a>
+                   </div>
+                </div>
+                <div class="login-body">
+                    <div class="logo-img">
+                        <img src="../images/logo1.png" alt="">
+                    </div>
+                    <h4>
+                        Welcome to Zillionaire
+                    </h4>
+
+                    <h4>Regular Pickup Plan</h4>
+
+                   <div class="One-Time-Pickup Regular-Pickup">
+                    <a href="#">Book a Regular Pickup</a>
+                   </div>
+                </div>
+                <div class="login-body">
+                    <div class="logo-img">
+                        <img src="../images/logo1.png" alt="">
+                    </div>
+                    <h4>
+                        Welcome to Zillionaire
+                    </h4>
+
+                    <h4>Long Term Pickup Plan</h4>
+
+                   <div class="One-Time-Pickup Long-Term-Pickup">
+                    <a href="#">Book a Long Term Pickup</a>
+                   </div>
+                </div>
+            </section>
+            <section class="login login-form">
+                <div class="login-body bookingForm">
+                    <div class="logo-img">
+                        <img src="../images/logo1.png" alt="">
+                    </div>
+
+                    <div class="contactDetailsBtn">
+                        <h4>Fill in the details below to schedule a pickup base on your preference</h4>
+                    </div>
+
+                    <form method="post" id="contactDetails">
+                            <fieldset>
+                                <legend>Contact Details</legend>
+                                <label for="name">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input id="name" placeholder="Full Name" name="Full-Name" type="text">
+                                </label>
+                                <br>
+                                <label for="email">
+                                    <i class="fa-solid fa-envelope-volume"></i>
+                                    <input id="email" placeholder="Input your email" name="Email" type="email">
+                                </label>
+                                <label for="phoneNo">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <input id="phoneNo" placeholder="Phone No" name="Phone-No" type="number">
+                                </label>
+                                <br>
+                                <label for="pickupAddress">
+                                    <i class="fa-solid fa-address-book"></i>
+                                    <input id="pickupAddress" placeholder="Pickup Address" name="Address" type="text">
+                                </label>
+                                <br>
+                                <h5>Chose Prefered Plan</h5>
+                                <select name="pickup-plans" id="plans">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="One-Time-Pickup">One-Time-Pickup</option>
+                                    <option value="Regular Pickup">Regular Pickup</option>
+                                    <option value="Long Term Pickup">Long Term Pickup</option>
+                                </select>
+                                <br>
+                                <button type="submit" onclick="sendToEmail()" id="bookingFormBtn">Submit</button>
+                            </fieldset>
+                    </form>
+                    <div class="prevPage">
+                        <a href="#">Return To Previous Page</a>
+                    </div>
+                </div>
+            </section>
+            <!-- main end here  -->
+
+             <!-- footer start here  -->
+        <footer class="footer">
+            <hr>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-bars-staggered"></i> 
+                        <h1>ZILLIONAIRE</h1>
+                    </div>
+                    <p class="footer-para">
+                        Zillionaire takes laundry off your list, so you can have a more meaningful use of your time. We come get your laundry on schedule, adding more hours to your week.
+                    </p>
+                    <p>
+                        &copy; 2022-2023 Zillionaire<sup>&reg;</sup> All right reserved <br> <b>SGTECH</b>
+                    </p>
+                </div>
+                <div>
+                    <h2>Laundry Services</h2>
+                    <ul>
+                        <li><a href="#">Airbnb Laundry Service</a></li>
+                        <li><a href="#">Schedule Pickup</a></li>
+                        <li><a href="#">Our Price List</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+        <!-- footer end here  -->
+
+            
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../JS/schedule.js"></script>
+</body>
+</html>
