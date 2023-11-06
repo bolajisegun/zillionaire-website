@@ -1,3 +1,13 @@
+    // preloader
+    let loader = document.getElementById('preloader');
+    
+    window.addEventListener('load', function(){
+       window.setTimeout(function() {
+        loader.style.display = 'none';
+       }, 1000)  
+});
+
+
 // typing effect for hero section 
 var typingText = document.getElementById('typing-text')
 var typingText2 = document.getElementById('text2')
@@ -5,8 +15,6 @@ var index = 0;
 var indexs = 0;
 var texts = "ZILLIONAIRE ";
 var text2 = "Never spend your weekends catching up on laundry again. We come get your laundry on demand, giving you 3+ extra hours to spend however you want."
-
-
 
 
 function typeText(){
