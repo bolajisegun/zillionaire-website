@@ -4,6 +4,11 @@ let loader = document.getElementById('preloader');
 
 window.addEventListener('load', function(){
         loader.style.display = 'none';
+<<<<<<< HEAD
+=======
+    }, 0);
+    
+>>>>>>> dcb34c6c05e75c9fff64caf397bff3e78c7db6eb
 });
 // typing effect for hero section 
 var typingText = document.getElementById('typing-text')
