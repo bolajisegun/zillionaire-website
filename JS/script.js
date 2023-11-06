@@ -1,13 +1,10 @@
+
 // preloader
 let loader = document.getElementById('preloader');
 
 window.addEventListener('load', function(){
-    window.setTimeout(function(){
         loader.style.display = 'none';
-    }, 70);
-    
 });
-
 // typing effect for hero section 
 var typingText = document.getElementById('typing-text')
 var typingText2 = document.getElementById('text2')
@@ -21,7 +18,7 @@ function typeText(){
     if (index < texts.length) {
         typingText.textContent += texts.charAt(index);
         index++;
-        setTimeout(typeText, 250)
+        setTimeout(typeText, 100)
        }       
     
 }
