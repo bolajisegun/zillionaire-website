@@ -1,5 +1,3 @@
-
-
 // typing effect for hero section 
 var typingText = document.getElementById('typing-text')
 var typingText2 = document.getElementById('text2')
@@ -7,6 +5,9 @@ var index = 0;
 var indexs = 0;
 var texts = "ZILLIONAIRE ";
 var text2 = "Never spend your weekends catching up on laundry again. We come get your laundry on demand, giving you 3+ extra hours to spend however you want."
+
+
+
 
 function typeText(){
     
@@ -37,6 +38,7 @@ ourStory.addEventListener('click', function(){
     aboutUs.style.display = 'initial';
 })
 
+// mobile view 
 let navBtn = document.querySelector('.nav-btn');
 let closeBtn = document.querySelector('.close-nav-btn');
 let mobileLinks = document.querySelector('.mobile-navLinks');
@@ -53,21 +55,21 @@ closeBtn.addEventListener('click', function(){
 });
 
 // animate on scroll using gsap 
-let animation = gsap.to('animatedScroll', {
-    x:200,
-    duration:1,
-})
+// let animation = gsap.to('animatedScroll', {
+//     x:200,
+//     duration:1,
+// })
 
-let animatedScroll = document.querySelector('.sec-one');
-let scrollAni = gsap.timeline({
-    scrollTrigger: {
-        trigger: 'animatedScroll',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: 'true',
-        marker: 'false'
-    }
-});
+// let animatedScroll = document.querySelector('.sec-one');
+// let scrollAni = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: 'animatedScroll',
+//         start: 'top center',
+//         end: 'bottom center',
+//         scrub: 'true',
+//         marker: 'false'
+//     }
+// });
 
-gsap.registerPlugin(scrollAni);
+// gsap.registerPlugin(scrollAni);
 
